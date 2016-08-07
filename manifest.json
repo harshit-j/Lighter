@@ -1,0 +1,39 @@
+{
+
+  "description": "Adds a button to open current page with Google Web Light",
+  "manifest_version": 2,
+  "name": "Lighter",
+  "version": "1.0",
+  "homepage_url": "https://github.com/harshit-j/Lighter",
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "harsh35plus@gmail.com",
+      "strict_min_version": "45.0"
+    }
+  },
+ "permissions": [
+    "activeTab"
+],
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  
+  "commands": {
+     "light": {
+       "suggested_key": {
+       "default": "Alt+Z"
+    },
+     "description": "Open with Google Web Light"
+  }
+}
+  
+  
+}
